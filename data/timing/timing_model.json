@@ -1,0 +1,35 @@
+{
+  "classic": {
+    "lockDelayMs": 500,
+    "lockResetOnMove": true,
+    "lockResetOnRotate": true,
+    "maxLockResets": null,
+
+    "areMs": 100,
+    "dasMs": 150,
+    "arrMs": 30,
+
+    "irsEnabled": true,
+    "ihsEnabled": true,
+
+    "softDropMultiplier": 20,
+    "hardDropInstant": true
+  },
+
+  "hardcore": {
+    "lockDelayMs": 500,
+    "lockResetOnMove": false,
+    "lockResetOnRotate": true,
+    "maxLockResets": 2,
+
+    "areMs": 50,
+    "dasMs": 100,
+    "arrMs": 10,
+
+    "irsEnabled": true,
+    "ihsEnabled": true,
+
+    "softDropMultiplier": 20,
+    "hardDropInstant": true
+  }
+}

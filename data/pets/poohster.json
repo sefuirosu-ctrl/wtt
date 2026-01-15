@@ -1,0 +1,57 @@
+{
+  "id": "poohster",
+  "name": "Poohster the Bear",
+  "archetype": "Stability / Breakthrough",
+
+  "lore": {
+    "theme": "Warm strength, grounded stability",
+    "personality": [
+      "Calm",
+      "Steadfast",
+      "Protective",
+      "Unshakeable"
+    ]
+  },
+
+  "attributes": {
+    "STR": 1.3,
+    "INT": 1.0,
+    "DEF": 1.3,
+    "SPD": 0.9
+  },
+
+  "ai_profile": {
+    "evaluation_interval": 1.2,
+    "priority": "board_stability"
+  },
+
+  "skills": [
+    {
+      "id": "heavy_slam",
+      "cooldown": 10,
+      "effect": {
+        "type": "field_stabilization"
+      }
+    },
+    {
+      "id": "unshakeable",
+      "cooldown": 16,
+      "effect": {
+        "type": "pressure_spike_suppression",
+        "multiplier": 0.85,
+        "duration": 6
+      }
+    }
+  ],
+
+  "educational_notes": {
+    "design_focus": [
+      "Board safety",
+      "Stability without erasing mistakes"
+    ],
+    "teaches": [
+      "Maintaining structure",
+      "Recovering from near-fail states"
+    ]
+  }
+}

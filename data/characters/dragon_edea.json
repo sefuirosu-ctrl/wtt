@@ -1,0 +1,56 @@
+{
+  "id": "dragon_edea",
+  "name": "Edea Flamberge",
+  "title": "Destruction Incarnate",
+  "archetype": "Dragon",
+  "role": "DPS / Chaos",
+  "difficulty_profile": "extreme_pressure_amplification",
+
+  "lore": {
+    "theme": "Raw power, overwhelming force, reckless brilliance",
+    "personality": [
+      "Aggressive",
+      "Dominant",
+      "Impulsive",
+      "Fearless"
+    ],
+    "signature_quote": "I am destruction given form."
+  },
+
+  "visual": {
+    "palette": ["crimson", "ember_orange", "black"],
+    "ui_glow": "inferno_bloom",
+    "animation_style": "violent_explosive"
+  },
+
+  "base_stats": {
+    "pressure_gain_multiplier": 1.35,
+    "combo_reward_multiplier": 1.4,
+    "mistake_severity_multiplier": 1.25
+  },
+
+  "pressure_interaction": {
+    "overdrive_threshold": 0.55,
+    "baron_aggression_modifier": 0.3
+  },
+
+  "difficulty_scaling": {
+    "easy": { "pressure_gain_multiplier": 1.2 },
+    "normal": { "pressure_gain_multiplier": 1.35 },
+    "hard": { "pressure_gain_multiplier": 1.5 },
+    "hardcore": { "pressure_gain_multiplier": 1.65 }
+  },
+
+  "educational_notes": {
+    "design_focus": [
+      "Extreme risk-reward",
+      "Pressure amplification",
+      "Irreversible decisions"
+    ],
+    "teaches": [
+      "Commitment to action",
+      "Consequences of greed",
+      "Control through mastery, not safety"
+    ]
+  }
+}

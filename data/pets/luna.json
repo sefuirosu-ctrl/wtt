@@ -1,0 +1,46 @@
+{
+  "id": "luna",
+  "name": "Luna the Cat",
+  "archetype": "Precision / Foresight",
+
+  "lore": {
+    "theme": "Calm foresight, quiet guidance",
+    "personality": [
+      "Observant",
+      "Patient",
+      "Silent",
+      "Protective"
+    ]
+  },
+
+  "attributes": {
+    "STR": 1.0,
+    "INT": 1.4,
+    "DEF": 1.2,
+    "SPD": 1.1
+  },
+
+  "ai_profile": {
+    "evaluation_interval": 1.0,
+    "priority": "prevent_escalation"
+  },
+
+  "skills": [
+    {
+      "id": "foresight",
+      "cooldown": 8,
+      "effect": {
+        "type": "pressure_spike_suppression",
+        "value": 0.85
+      }
+    },
+    {
+      "id": "silent_step",
+      "cooldown": 12,
+      "effect": {
+        "type": "mistake_penalty_reduction",
+        "value": 0.9
+      }
+    }
+  ]
+}

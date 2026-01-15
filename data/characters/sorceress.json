@@ -1,0 +1,89 @@
+{
+  "id": "sorceress_zirielle",
+  "name": "Zirielle",
+  "title": "The Arcane Arbiter",
+  "archetype": "Sorceress",
+  "role": "Control / Burst / Destruction",
+  "difficulty_profile": "high_risk_high_reward",
+
+  "lore": {
+    "theme": "Cold intellect, calculated destruction",
+    "personality": [
+      "Dominant",
+      "Precise",
+      "Unforgiving",
+      "Analytical"
+    ],
+    "signature_quote": "I decide which lines survive."
+  },
+
+  "visual": {
+    "palette": ["violet", "arcane_blue", "icy_white"],
+    "ui_glow": "arcane_frost",
+    "animation_style": "sharp_controlled",
+    "emotion_priority": [
+      "Superiority",
+      "Focus",
+      "Contained Fury"
+    ]
+  },
+
+  "base_stats": {
+    "pressure_gain_multiplier": 1.15,
+    "combo_reward_multiplier": 1.2,
+    "mistake_penalty_multiplier": 1.1
+  },
+
+  "pressure_interaction": {
+    "amplifies_pressure": true,
+    "escalation_threshold": 0.45,
+    "baron_aggression_modifier": 0.15
+  },
+
+  "difficulty_scaling": {
+    "easy": {
+      "pressure_gain_multiplier": 1.05
+    },
+    "normal": {
+      "pressure_gain_multiplier": 1.15
+    },
+    "hard": {
+      "pressure_gain_multiplier": 1.25
+    },
+    "hardcore": {
+      "pressure_gain_multiplier": 1.35
+    }
+  },
+
+  "synergies": {
+    "preferred_pets": [
+      "leaffy",
+      "kolos"
+    ],
+    "anti_synergy": [
+      "defensive_low_risk_pets"
+    ]
+  },
+
+  "ui_hints": {
+    "recommended_for": [
+      "Advanced players",
+      "High APM control",
+      "Aggressive strategies"
+    ],
+    "playstyle_tip": "Zirielle rewards foresight and punishes hesitation. Destruction is a tool, not a crutch."
+  },
+
+  "educational_notes": {
+    "design_focus": [
+      "Controlled chaos",
+      "Risk amplification",
+      "Decision ownership"
+    ],
+    "teaches": [
+      "Intentional destruction",
+      "Pressure management under stress",
+      "Timing over reaction"
+    ]
+  }
+}

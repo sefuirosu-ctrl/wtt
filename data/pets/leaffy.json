@@ -1,0 +1,55 @@
+{
+  "id": "leaffy",
+  "name": "Leaffy the Fox",
+  "archetype": "Speed / Cleverness",
+
+  "lore": {
+    "theme": "Tempo, focus, precision",
+    "personality": ["Quick", "Clever", "Alert", "Measured"]
+  },
+
+  "attributes": {
+    "STR": 1.0,
+    "INT": 1.3,
+    "DEF": 1.0,
+    "SPD": 1.2
+  },
+
+  "ai_profile": {
+    "evaluation_interval": 0.9,
+    "priority": "tempo_control"
+  },
+
+  "soft_caps": {
+    "cooldown_reduction_max": 0.25,
+    "combo_window_extension_max": 0.30,
+    "lock_delay_bonus_max": 0.15,
+    "effect_duration_max": 5.0
+  },
+
+  "skills": [
+    {
+      "id": "quick_wit",
+      "cooldown": 12,
+      "effect": {
+        "type": "cooldown_reduction",
+        "multiplier": 0.85,
+        "duration": 4.0
+      }
+    },
+    {
+      "id": "trick_trail",
+      "cooldown": 14,
+      "effect": {
+        "type": "combo_window_extension",
+        "multiplier": 0.25,
+        "duration": 5.0
+      }
+    }
+  ],
+
+  "educational_notes": {
+    "design_focus": ["Tempo control", "Decision windows"],
+    "teaches": ["APM discipline", "Timing over panic"]
+  }
+}

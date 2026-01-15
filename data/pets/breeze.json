@@ -1,0 +1,56 @@
+{
+  "id": "breeze",
+  "name": "Breeze the Dodo",
+  "archetype": "Momentum / Recovery",
+
+  "lore": {
+    "theme": "Flow, balance after chaos",
+    "personality": [
+      "Gentle",
+      "Supportive",
+      "Reactive",
+      "Unobtrusive"
+    ]
+  },
+
+  "attributes": {
+    "STR": 1.0,
+    "INT": 1.2,
+    "DEF": 1.1,
+    "SPD": 0.9
+  },
+
+  "ai_profile": {
+    "evaluation_interval": 0.8,
+    "priority": "panic_recovery"
+  },
+
+  "soft_caps": {
+    "gravity_slow_min_multiplier": 0.75,
+    "effect_duration_max": 3.0,
+    "min_activation_gap": 9.0
+  },
+
+  "skills": [
+    {
+      "id": "second_wind",
+      "cooldown": 14,
+      "effect": {
+        "type": "global_gravity_slow",
+        "multiplier": 0.8,
+        "duration": 2.5
+      }
+    }
+  ],
+
+  "educational_notes": {
+    "design_focus": [
+      "Recovery pacing",
+      "Maintaining control under stress"
+    ],
+    "teaches": [
+      "Regaining rhythm",
+      "Surviving panic moments"
+    ]
+  }
+}

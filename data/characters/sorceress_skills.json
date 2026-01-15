@@ -1,0 +1,97 @@
+{
+  "character_id": "sorceress_zirielle",
+
+  "ability_gauge": {
+    "base_gain_multiplier": 1.1,
+    "pressure_gain_modifier": 0.1
+  },
+
+  "skills": [
+    {
+      "id": "frost_touch",
+      "name": "Frost Touch",
+      "tier": "basic",
+      "slot": 1,
+      "cooldown": 5,
+      "gauge_cost": 20,
+
+      "effect": {
+        "type": "freeze_gravity",
+        "duration": {
+          "base": 1.5,
+          "scaling_per_level": 0.1
+        }
+      },
+
+      "pressure_cost": {
+        "on_use": 0.02
+      }
+    },
+
+    {
+      "id": "arcane_burn",
+      "name": "Arcane Burn",
+      "tier": "advanced",
+      "slot": 2,
+      "cooldown": 10,
+      "gauge_cost": 40,
+
+      "effect": {
+        "type": "targeted_destruction",
+        "blocks": {
+          "base": 2,
+          "scaling_per_level": 0.15
+        }
+      },
+
+      "pressure_cost": {
+        "on_use": 0.05
+      }
+    },
+
+    {
+      "id": "frozen_domain",
+      "name": "Frozen Domain",
+      "tier": "powerful",
+      "slot": 3,
+      "cooldown": 20,
+      "gauge_cost": 65,
+
+      "effect": {
+        "type": "global_gravity_slow",
+        "multiplier": 0.6,
+        "duration": {
+          "base": 4,
+          "scaling_per_level": 0.25
+        }
+      },
+
+      "pressure_cost": {
+        "on_use": 0.07
+      }
+    },
+
+    {
+      "id": "absolute_zero",
+      "name": "Absolute Zero",
+      "tier": "ultimate",
+      "slot": 4,
+      "cooldown": 30,
+      "gauge_cost": 100,
+
+      "effect": {
+        "type": "critical_zone_cleanup",
+        "stabilize_board": true
+      },
+
+      "pressure_cost": {
+        "on_use": 0.15
+      },
+
+      "risk_tradeoff": {
+        "future_pressure_gain": 0.25,
+        "baron_aggression_increase": 0.25
+      }
+    }
+  ]
+}

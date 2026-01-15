@@ -1,0 +1,63 @@
+{
+  "character_id": "rogue_drobadan",
+
+  "ability_gauge": {
+    "base_gain_multiplier": 1.0,
+    "pressure_gain_modifier": 0.05
+  },
+
+  "skills": [
+    {
+      "id": "mock",
+      "tier": "basic",
+      "slot": 1,
+      "cooldown": 5,
+      "gauge_cost": 15,
+      "effect": {
+        "type": "increase_baron_error"
+      },
+      "pressure_cost": { "on_use": 0.02 }
+    },
+
+    {
+      "id": "sabotage",
+      "tier": "advanced",
+      "slot": 2,
+      "cooldown": 10,
+      "gauge_cost": 35,
+      "effect": {
+        "type": "cancel_baron_action"
+      },
+      "pressure_cost": { "on_use": 0.05 }
+    },
+
+    {
+      "id": "mind_game",
+      "tier": "powerful",
+      "slot": 3,
+      "cooldown": 20,
+      "gauge_cost": 60,
+      "effect": {
+        "type": "force_baron_misplay",
+        "duration": { "base": 4, "per_level": 0.3 }
+      },
+      "pressure_cost": { "on_use": 0.08 }
+    },
+
+    {
+      "id": "grand_taunt",
+      "tier": "ultimate",
+      "slot": 4,
+      "cooldown": 30,
+      "gauge_cost": 100,
+      "effect": {
+        "type": "chain_baron_errors"
+      },
+      "pressure_cost": { "on_use": 0.15 },
+      "risk_tradeoff": {
+        "future_pressure_gain": 0.25,
+        "baron_aggression_increase": 0.25
+      }
+    }
+  ]
+}

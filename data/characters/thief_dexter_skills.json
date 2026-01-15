@@ -1,0 +1,63 @@
+{
+  "character_id": "rogue_dexter",
+
+  "ability_gauge": {
+    "base_gain_multiplier": 1.0,
+    "pressure_gain_modifier": 0.05
+  },
+
+  "skills": [
+    {
+      "id": "pickpocket",
+      "tier": "basic",
+      "slot": 1,
+      "cooldown": 6,
+      "gauge_cost": 20,
+      "effect": {
+        "type": "steal_negative_effect"
+      },
+      "pressure_cost": { "on_use": 0.03 }
+    },
+
+    {
+      "id": "tangle",
+      "tier": "advanced",
+      "slot": 2,
+      "cooldown": 10,
+      "gauge_cost": 40,
+      "effect": {
+        "type": "alter_next_piece"
+      },
+      "pressure_cost": { "on_use": 0.05 }
+    },
+
+    {
+      "id": "smoke_and_mirrors",
+      "tier": "powerful",
+      "slot": 3,
+      "cooldown": 20,
+      "gauge_cost": 65,
+      "effect": {
+        "type": "desync_baron_timing",
+        "duration": { "base": 4, "per_level": 0.3 }
+      },
+      "pressure_cost": { "on_use": 0.08 }
+    },
+
+    {
+      "id": "perfect_heist",
+      "tier": "ultimate",
+      "slot": 4,
+      "cooldown": 30,
+      "gauge_cost": 100,
+      "effect": {
+        "type": "convert_negatives_to_benefits"
+      },
+      "pressure_cost": { "on_use": 0.15 },
+      "risk_tradeoff": {
+        "future_pressure_gain": 0.2,
+        "baron_aggression_increase": 0.2
+      }
+    }
+  ]
+}

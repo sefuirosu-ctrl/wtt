@@ -1,0 +1,95 @@
+{
+  "id": "warrior_alexielle",
+  "name": "Alexielle",
+  "title": "The Unbreakable Shield",
+  "archetype": "Warrior",
+  "role": "Tank / Stability",
+  "difficulty_profile": "high_resilience_control",
+
+  "lore": {
+    "theme": "Strength, leadership, unyielding resolve",
+    "personality": [
+      "Confident",
+      "Disciplined",
+      "Protective",
+      "Resolute"
+    ],
+    "signature_quote": "I am the shield. Follow me to victory."
+  },
+
+  "visual": {
+    "palette": ["steel_blue", "gray", "crimson"],
+    "ui_glow": "cold_steel",
+    "animation_style": "grounded_heavy",
+    "emotion_priority": [
+      "Resolve",
+      "Defiance",
+      "Calm Authority"
+    ]
+  },
+
+  "base_stats": {
+    "pressure_gain_reduction": 0.85,
+    "lock_delay_bonus": 1.25,
+    "gravity_resistance": 0.9,
+    "mistake_severity_reduction": 0.8
+  },
+
+  "pressure_interaction": {
+    "reduces_spikes": true,
+    "stability_threshold": 0.6,
+    "baron_aggression_modifier": 0.05
+  },
+
+  "difficulty_scaling": {
+    "easy": {
+      "lock_delay_bonus": 1.35,
+      "pressure_gain_reduction": 0.75
+    },
+    "normal": {
+      "lock_delay_bonus": 1.25,
+      "pressure_gain_reduction": 0.85
+    },
+    "hard": {
+      "lock_delay_bonus": 1.15,
+      "pressure_gain_reduction": 0.9
+    },
+    "hardcore": {
+      "lock_delay_bonus": 1.05,
+      "pressure_gain_reduction": 0.95
+    }
+  },
+
+  "synergies": {
+    "preferred_pets": [
+      "pucla",
+      "poohster",
+      "luna"
+    ],
+    "anti_synergy": [
+      "high_speed_combo_focus"
+    ]
+  },
+
+  "ui_hints": {
+    "recommended_for": [
+      "Players who value control",
+      "High-pressure survival runs",
+      "Learning difficult modes"
+    ],
+    "playstyle_tip": "Alexielle rewards patience, clean stacking, and deliberate decisions."
+  },
+
+  "educational_notes": {
+    "design_focus": [
+      "Defensive play",
+      "Error mitigation",
+      "Board stability"
+    ],
+    "teaches": [
+      "Risk anticipation",
+      "Spatial discipline",
+      "Pressure control through structure"
+    ]
+  }
+}

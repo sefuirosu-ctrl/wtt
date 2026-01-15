@@ -1,0 +1,55 @@
+{
+  "id": "rogue_drobadan",
+  "name": "Drobadan Coxx",
+  "title": "The Laughing Provocateur",
+  "archetype": "Rogue",
+  "role": "Provocation / AI Disruption",
+  "difficulty_profile": "psychological_warfare",
+
+  "lore": {
+    "theme": "Mockery, taunts, psychological dominance",
+    "personality": [
+      "Mocking",
+      "Cunning",
+      "Unpredictable",
+      "Annoyingly confident"
+    ],
+    "signature_quote": "You call that strategy?"
+  },
+
+  "visual": {
+    "palette": ["earth_brown", "muted_green", "dusty_yellow"],
+    "ui_glow": "erratic_flicker",
+    "animation_style": "jerky_comedic"
+  },
+
+  "base_stats": {
+    "baron_error_chance_bonus": 0.2,
+    "pressure_spike_multiplier": 0.9
+  },
+
+  "pressure_interaction": {
+    "taunt_threshold": 0.3,
+    "baron_overreaction_bonus": 0.2
+  },
+
+  "difficulty_scaling": {
+    "easy": { "baron_error_chance_bonus": 0.3 },
+    "normal": { "baron_error_chance_bonus": 0.2 },
+    "hard": { "baron_error_chance_bonus": 0.15 },
+    "hardcore": { "baron_error_chance_bonus": 0.1 }
+  },
+
+  "educational_notes": {
+    "design_focus": [
+      "AI manipulation",
+      "Psychological pressure",
+      "Risk through provocation"
+    ],
+    "teaches": [
+      "Reading opponent behavior",
+      "Baiting mistakes",
+      "Controlled chaos"
+    ]
+  }
+}

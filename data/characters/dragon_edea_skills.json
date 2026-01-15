@@ -1,0 +1,67 @@
+{
+  "character_id": "dragon_edea",
+
+  "ability_gauge": {
+    "base_gain_multiplier": 1.2,
+    "pressure_gain_modifier": 0.2
+  },
+
+  "skills": [
+    {
+      "id": "ember_rush",
+      "tier": "basic",
+      "slot": 1,
+      "cooldown": 5,
+      "gauge_cost": 25,
+      "effect": {
+        "type": "combo_amplification",
+        "multiplier": 1.2,
+        "duration": { "base": 3, "per_level": 0.2 }
+      },
+      "pressure_cost": { "on_use": 0.04 }
+    },
+
+    {
+      "id": "flame_break",
+      "tier": "advanced",
+      "slot": 2,
+      "cooldown": 10,
+      "gauge_cost": 45,
+      "effect": {
+        "type": "field_destruction",
+        "blocks": { "base": 3, "per_level": 0.2 }
+      },
+      "pressure_cost": { "on_use": 0.08 }
+    },
+
+    {
+      "id": "inferno_flow",
+      "tier": "powerful",
+      "slot": 3,
+      "cooldown": 20,
+      "gauge_cost": 70,
+      "effect": {
+        "type": "gravity_overdrive",
+        "multiplier": 1.4,
+        "duration": { "base": 4, "per_level": 0.3 }
+      },
+      "pressure_cost": { "on_use": 0.12 }
+    },
+
+    {
+      "id": "dragon_apocalypse",
+      "tier": "ultimate",
+      "slot": 4,
+      "cooldown": 30,
+      "gauge_cost": 100,
+      "effect": {
+        "type": "massive_destruction"
+      },
+      "pressure_cost": { "on_use": 0.25 },
+      "risk_tradeoff": {
+        "future_pressure_gain": 0.35,
+        "baron_aggression_increase": 0.35
+      }
+    }
+  ]
+}

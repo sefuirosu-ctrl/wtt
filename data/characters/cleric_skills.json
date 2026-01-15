@@ -1,0 +1,142 @@
+{
+  "character_id": "cleric_lucia",
+
+  "ability_gauge": {
+    "base_gain_multiplier": 1.0,
+    "pressure_gain_modifier": -0.1
+  },
+
+  "skills": [
+    {
+      "id": "gentle_light",
+      "name": "Gentle Light",
+      "tier": "basic",
+      "slot": 1,
+      "cooldown": 5,
+      "gauge_cost": 15,
+
+      "effect": {
+        "type": "pressure_reduction",
+        "base_value": 0.05,
+        "scaling_per_level": 0.002
+      },
+
+      "pressure_cost": {
+        "on_use": 0.0,
+        "on_overuse": 0.02
+      },
+
+      "visual": {
+        "vfx": "warm_halo",
+        "screen_effect": "soft_glow"
+      },
+
+      "design_notes": "Frequent, low-impact ability that reassures the player without removing responsibility."
+    },
+
+    {
+      "id": "sacred_stitch",
+      "name": "Sacred Stitch",
+      "tier": "advanced",
+      "slot": 2,
+      "cooldown": 10,
+      "gauge_cost": 30,
+
+      "effect": {
+        "type": "near_line_completion",
+        "base_chance": 0.35,
+        "scaling_per_level": 0.015
+      },
+
+      "constraints": {
+        "only_near_complete_lines": true,
+        "cannot_create_lines_from_empty"
+      },
+
+      "pressure_cost": {
+        "on_use": 0.03
+      },
+
+      "visual": {
+        "vfx": "golden_threads",
+        "screen_effect": "subtle_flash"
+      },
+
+      "design_notes": "Turns near-misses into recovery moments without trivializing execution."
+    },
+
+    {
+      "id": "divine_shelter",
+      "name": "Divine Shelter",
+      "tier": "powerful",
+      "slot": 3,
+      "cooldown": 20,
+      "gauge_cost": 50,
+
+      "duration": {
+        "base": 6,
+        "scaling_per_level": 0.25
+      },
+
+      "effect": {
+        "type": "mistake_mitigation",
+        "penalty_multiplier": 0.6
+      },
+
+      "pressure_cost": {
+        "on_use": 0.05
+      },
+
+      "visual": {
+        "vfx": "protective_dome",
+        "screen_effect": "light_barrier"
+      },
+
+      "design_notes": "Creates a temporary safety window under pressure, encouraging recovery instead of panic."
+    },
+
+    {
+      "id": "miracle_grace",
+      "name": "Miracle Grace",
+      "tier": "ultimate",
+      "slot": 4,
+      "cooldown": 30,
+      "gauge_cost": 100,
+
+      "effect": {
+        "type": "major_pressure_reset",
+        "pressure_reduction": 0.4,
+        "stabilize_board": true
+      },
+
+      "pressure_cost": {
+        "on_use": 0.15
+      },
+
+      "risk_tradeoff": {
+        "future_gauge_penalty": 0.2,
+        "baron_attention_increase": 0.15
+      },
+
+      "visual": {
+        "vfx": "radiant_wings",
+        "screen_effect": "full_screen_light"
+      },
+
+      "design_notes": "A powerful reset that saves runs, but guarantees heightened danger afterward."
+    }
+  ],
+
+  "educational_notes": {
+    "focus": [
+      "Recovery design",
+      "Soft fail states",
+      "Emotional pacing"
+    ],
+    "player_lessons": [
+      "Not every mistake must end a run",
+      "Stability is a skill",
+      "Overreliance creates future risk"
+    ]
+  }
+}

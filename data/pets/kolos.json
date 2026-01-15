@@ -1,0 +1,62 @@
+{
+  "id": "kolos",
+  "name": "Kolos the Raccoon",
+  "archetype": "Opportunism / Conversion",
+
+  "lore": {
+    "theme": "Cunning survival, turning misfortune into leverage",
+    "personality": [
+      "Opportunistic",
+      "Clever",
+      "Greedy",
+      "Calculating"
+    ]
+  },
+
+  "attributes": {
+    "STR": 1.1,
+    "INT": 1.4,
+    "DEF": 1.0,
+    "SPD": 0.9
+  },
+
+  "ai_profile": {
+    "evaluation_interval": 1.0,
+    "priority": "threat_response"
+  },
+
+  "hard_limits": {
+    "min_activation_gap": 11.0,
+    "max_conversions_per_activation": 1,
+    "max_active_interceptions": 1
+  },
+
+  "skills": [
+    {
+      "id": "sticky_fingers",
+      "cooldown": 16,
+      "effect": {
+        "type": "steal_negative_effect"
+      }
+    },
+    {
+      "id": "scavenger_instinct",
+      "cooldown": 20,
+      "effect": {
+        "type": "convert_negatives_to_benefits",
+        "benefit_multiplier": 0.5
+      }
+    }
+  ],
+
+  "educational_notes": {
+    "design_focus": [
+      "Risk mitigation without negation",
+      "Tactical opportunism"
+    ],
+    "teaches": [
+      "Choosing when to interfere",
+      "Accepting partial victories"
+    ]
+  }
+}

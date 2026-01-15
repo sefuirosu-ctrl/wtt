@@ -1,0 +1,96 @@
+{
+  "character_id": "warrior_alexielle",
+
+  "ability_gauge": {
+    "base_gain_multiplier": 0.95,
+    "pressure_gain_modifier": 0.05
+  },
+
+  "skills": [
+    {
+      "id": "iron_guard",
+      "name": "Iron Guard",
+      "tier": "basic",
+      "slot": 1,
+      "cooldown": 5,
+      "gauge_cost": 20,
+
+      "effect": {
+        "type": "lock_delay_boost",
+        "base_multiplier": 1.2,
+        "scaling_per_level": 0.02
+      },
+
+      "pressure_cost": {
+        "on_use": 0.01
+      },
+
+      "design_notes": "Frequent defensive tool that increases placement precision."
+    },
+
+    {
+      "id": "shield_breaker",
+      "name": "Shield Breaker",
+      "tier": "advanced",
+      "slot": 2,
+      "cooldown": 10,
+      "gauge_cost": 35,
+
+      "effect": {
+        "type": "field_stabilization",
+        "clear_instability": true
+      },
+
+      "pressure_cost": {
+        "on_use": 0.04
+      },
+
+      "design_notes": "Resets uneven board states without clearing lines directly."
+    },
+
+    {
+      "id": "stand_firm",
+      "name": "Stand Firm",
+      "tier": "powerful",
+      "slot": 3,
+      "cooldown": 20,
+      "gauge_cost": 60,
+
+      "duration": {
+        "base": 6,
+        "scaling_per_level": 0.3
+      },
+
+      "effect": {
+        "type": "baron_interference_immunity"
+      },
+
+      "pressure_cost": {
+        "on_use": 0.06
+      },
+
+      "design_notes": "Creates a temporary zone of absolute control."
+    },
+
+    {
+      "id": "last_bastion",
+      "name": "Last Bastion",
+      "tier": "ultimate",
+      "slot": 4,
+      "cooldown": 30,
+      "gauge_cost": 100,
+
+      "effect": {
+        "type": "prevent_game_over",
+        "pressure_reset": 0.35
+      },
+
+      "risk_tradeoff": {
+        "baron_aggression_increase": 0.25,
+        "future_pressure_gain": 0.15
+      },
+
+      "design_notes": "A final stand that guarantees survival — at a steep future cost."
+    }
+  ]
+}

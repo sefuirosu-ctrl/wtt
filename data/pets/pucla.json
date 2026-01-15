@@ -1,0 +1,59 @@
+{
+  "id": "pucla",
+  "name": "Pucla the Dog",
+  "archetype": "Protection / Loyalty",
+
+  "lore": {
+    "theme": "Trust, defense, emotional safety",
+    "personality": [
+      "Loyal",
+      "Protective",
+      "Calm",
+      "Reliable"
+    ]
+  },
+
+  "attributes": {
+    "STR": 1.0,
+    "INT": 1.1,
+    "DEF": 1.4,
+    "SPD": 1.0
+  },
+
+  "ai_profile": {
+    "evaluation_interval": 1.0,
+    "priority": "mistake_mitigation"
+  },
+
+  "skills": [
+    {
+      "id": "guardian_bark",
+      "cooldown": 8,
+      "effect": {
+        "type": "mistake_penalty_reduction",
+        "multiplier": 0.85,
+        "duration": 4
+      }
+    },
+    {
+      "id": "loyal_guard",
+      "cooldown": 14,
+      "effect": {
+        "type": "pressure_spike_suppression",
+        "multiplier": 0.9,
+        "duration": 5
+      }
+    }
+  ],
+
+  "educational_notes": {
+    "design_focus": [
+      "Defensive support",
+      "Error forgiveness without negation"
+    ],
+    "teaches": [
+      "Recovery after mistakes",
+      "Maintaining composure"
+    ]
+  }
+}

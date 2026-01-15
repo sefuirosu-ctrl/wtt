@@ -1,0 +1,96 @@
+{
+  "id": "cleric_lucia",
+  "name": "Lucia Alexandria",
+  "title": "The Gentle Light",
+  "archetype": "Cleric",
+  "role": "Support / Recovery",
+  "difficulty_profile": "low_risk_stability",
+
+  "lore": {
+    "theme": "Hope, protection, emotional safety",
+    "personality": [
+      "Calm",
+      "Empathetic",
+      "Protective",
+      "Selfless"
+    ],
+    "signature_quote": "I will protect and heal."
+  },
+
+  "visual": {
+    "palette": ["white", "gold", "soft_pink"],
+    "ui_glow": "warm_light",
+    "animation_style": "soft",
+    "emotion_priority": [
+      "Concern",
+      "Relief",
+      "Encouragement"
+    ]
+  },
+
+  "base_stats": {
+    "pressure_decay_bonus": 1.25,
+    "mistake_penalty_reduction": 0.85,
+    "lock_delay_bonus": 1.15,
+    "combo_risk_multiplier": 0.9
+  },
+
+  "pressure_interaction": {
+    "passive_decay": true,
+    "high_pressure_safety_net": true,
+    "panic_mitigation_threshold": 0.7,
+    "baron_aggression_modifier": -0.1
+  },
+
+  "difficulty_scaling": {
+    "easy": {
+      "pressure_decay_bonus": 1.4,
+      "mistake_penalty_reduction": 0.75
+    },
+    "normal": {
+      "pressure_decay_bonus": 1.25,
+      "mistake_penalty_reduction": 0.85
+    },
+    "hard": {
+      "pressure_decay_bonus": 1.1,
+      "mistake_penalty_reduction": 0.9
+    },
+    "hardcore": {
+      "pressure_decay_bonus": 1.0,
+      "mistake_penalty_reduction": 0.95
+    }
+  },
+
+  "synergies": {
+    "preferred_pets": [
+      "luna",
+      "pucla",
+      "poohster"
+    ],
+    "anti_synergy": [
+      "high_chaos_playstyles"
+    ]
+  },
+
+  "ui_hints": {
+    "recommended_for": [
+      "New players",
+      "Cautious players",
+      "High difficulty consistency runs"
+    ],
+    "playstyle_tip": "Clean play and patience are rewarded. Lucia shines when the player avoids panic."
+  },
+
+  "educational_notes": {
+    "design_focus": [
+      "Mistake mitigation",
+      "Emotional pacing",
+      "Non-invasive support mechanics"
+    ],
+    "teaches": [
+      "Risk control",
+      "Pressure awareness",
+      "Recovery timing"
+    ]
+  }
+}

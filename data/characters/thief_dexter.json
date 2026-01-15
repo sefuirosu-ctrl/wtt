@@ -1,0 +1,50 @@
+{
+  "id": "thief_dexter",
+  "name": "Dexter Claw",
+  "title": "The Perfect Heist",
+  "archetype": "Thief",
+  "role": "Trickster / System Control",
+  "difficulty_profile": "high_skill_system_manipulation",
+
+  "lore": {
+    "theme": "Opportunism, mockery, control through disruption",
+    "personality": ["Playful", "Cunning", "Provocative", "Unpredictable"],
+    "signature_quote": "Rules exist to be borrowed."
+  },
+
+  "visual": {
+    "palette": ["purple", "dark_pink", "black", "gold"],
+    "ui_glow": "trickster_flicker",
+    "animation_style": "agile_teasing"
+  },
+
+  "base_stats": {
+    "lock_delay_bonus": 1.2,
+    "mistake_penalty_multiplier": 0.9
+  },
+
+  "pressure_interaction": {
+    "provocation_threshold": 0.35,
+    "baron_error_chance_bonus": 0.15
+  },
+
+  "difficulty_scaling": {
+    "easy": { "baron_error_chance_bonus": 0.2 },
+    "normal": { "baron_error_chance_bonus": 0.15 },
+    "hard": { "baron_error_chance_bonus": 0.1 },
+    "hardcore": { "baron_error_chance_bonus": 0.05 }
+  },
+
+  "educational_notes": {
+    "design_focus": [
+      "System literacy",
+      "Indirect control",
+      "Risk through provocation"
+    ],
+    "teaches": [
+      "Reading AI intent",
+      "Timing interventions",
+      "Turning pressure into advantage"
+    ]
+  }
+}
