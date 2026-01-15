@@ -18,18 +18,22 @@
     }
     canvas { display: block; }
   </style>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "@client/": "/client/"
+      }
+    }
+  </script>
 </head>
 <body>
 
   <!-- Контейнер -->
   <canvas id="gameCanvas"></canvas>
 
-  <!-- Debug (оставь только если реально используешь) -->
-  <!-- Если debug.js лежит в /public/build/js/debug.js -->
-  <script type="module" src="/public/build/js/debug.js"></script>
-
-  <!-- Основной бандл Vite -->
-  <script type="module" src="/public/build/app.js"></script>
+  <!-- Основной модуль Stage 6.1.A -->
+  <script type="module" src="/public/build/js/main.js"></script>
 
 </body>
 </html>

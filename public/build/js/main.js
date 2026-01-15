@@ -16,7 +16,7 @@ import { CanvasBoardRenderer } from "@client/gameplay/canvas/CanvasBoardRenderer
 import { CanvasConfig } from "@client/gameplay/canvas/CanvasConfig.js";
 
 console.log("[BOOT] World of Tetris — Live Board Bootstrap");
-console.log('MAIN_JS_VERSION = 2026-01-10-LIVE-BOARD-A8-FINAL');
+console.log("MAIN_JS_VERSION = 2026-01-10-LIVE-BOARD-A8-FINAL");
 
 // ---------------------------------------------------------------------
 // DOM root (ВАЖНО: рендерер сам создаёт canvas и аппендит в rootElement)
@@ -51,14 +51,14 @@ const boardSystem = {
 // ---------------------------------------------------------------------
 // Renderer + RenderLoop
 // ---------------------------------------------------------------------
-const canvasConfig = (typeof CanvasConfig === 'function') ? new CanvasConfig() : CanvasConfig;
+const canvasConfig = (typeof CanvasConfig === "function") ? new CanvasConfig() : CanvasConfig;
 const renderLoop = new CanvasRenderLoop();
 
 const renderer = new CanvasBoardRenderer({
   rootElement,
   eventBus,
   boardSystem,
-  canvasConfig,
+  config: canvasConfig,
   renderLoop,
 });
 
@@ -76,7 +76,7 @@ function publishSnapshots() {
   eventBus.emit("PIECE_UPDATED", boardState.getActivePieceSnapshot());
 
   // GHOST
-  eventBus.emit("GHOST_UPDATED", boardState.getGhostPieceSnapshot());
+  eventBus.emit("GHOST_PIECE_UPDATED", boardState.getGhostPieceSnapshot());
 }
 
 // Первичный рендер
